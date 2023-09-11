@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Header.h"
+#include "easy.h"
 
 using namespace std;
 
