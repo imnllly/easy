@@ -4,7 +4,6 @@
 using namespace std;
 
 int itc_str(int a, int b, int c) {
-	cin >> a >> b >> c;
 	int p = (a + b + c) / 2;
 	p = p * (p - a) * (p - b) *(p - c);
 	int i = 0;
@@ -14,12 +13,10 @@ int itc_str(int a, int b, int c) {
 }
 
 double itc_scir(int radius) {
-	cin >> radius;
 	if(radius > 0) return 3.14 * radius * radius;
 	return -1;
 }
 double itc_pow(int num, int step) {
-	cin >> num >> step;
 	if (num == 0) num = 0;
 	if (step == 1) num;
 	else if (step == 0) num = 1;
