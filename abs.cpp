@@ -1,4 +1,6 @@
 #include "easy.h"
+#include <cmath>
+
 using namespace std;
 
 int itc_abs(int num) {
