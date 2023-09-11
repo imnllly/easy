@@ -1,3 +1,4 @@
+#include <iostream>
 #include "easy.h"
 using namespace std;
 
