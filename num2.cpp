@@ -13,8 +13,11 @@ int itc_revnbr(int num) {
 }
 
 bool itc_iseven(int num) {
-    if (num % 2 == 0) return num;
-    return !num;
+	bool a = true;
+	bool b = false;
+	cout << boolalpha;
+	if (num % 2 == 0) return a;
+	return b;
 }
 
 int itc_max(int num, int num2) {
