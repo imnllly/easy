@@ -17,11 +17,13 @@ double itc_scir(int radius) {
 	return -1;
 }
 double itc_pow(int num, int step) {
+    double numm = 0;
 	if (num == 0) return 0;
 	if (step == 1) return num;
         if (step == 0) return 1;
 	if (step < 0) {
-		for (int i = -1; i > step; i--) num = 1.0 / (float)(num * num);
+		for (int i = -1; i > step; i--) numm = 1.0 / (num * num);
+		return numm;
 	}
 	else {
 		for (int j = 1; j < step; j++) num = num * num;
