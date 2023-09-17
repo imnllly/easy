@@ -17,9 +17,9 @@ double itc_scir(int radius) {
 	return -1;
 }
 double itc_pow(int num, int step) {
-	if (num == 0) num = 0;
-	if (step == 1) num;
-	else if (step == 0) num = 1;
+	if (num == 0) return 0;
+	if (step == 1) return num;
+        if (step == 0) return 1;
 	if (step < 0) {
 		for (int i = -1; i > step; i--) num = 1.0 / (float)(num * num);
 	}
