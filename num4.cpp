@@ -4,10 +4,10 @@
 using namespace std;
 
 int itc_sqrt(int num) {
-	int i = 0;
-	while (i * i < num) i++;
-	if(i * i == num) return i;
-	return -1;
+    for(long long i = 0; i <= num; i++) {
+        if(i * i == num) return i;
+    }
+    return -1;
 }
 
 int itc_skv(int num) {
