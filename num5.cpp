@@ -5,15 +5,8 @@ using namespace std;
 
 int itc_str(int a, int b, int c) {
 	double p = (a + b + c) / 2.0;
-	int res{};
-	long long j{};
 	p = p * (p - a) * (p - b) *(p - c);
-	for (long long i = 0; i * i < p; i++) {
-        j++;
-		if (j * j == p) res = j;
-		else res = -1;
-	}
-	return res;
+	return itc_sqrt(p);
 }
 
 double itc_scir(int radius) {
