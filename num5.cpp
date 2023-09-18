@@ -4,12 +4,16 @@
 using namespace std;
 
 int itc_str(int a, int b, int c) {
-	int p = (a + b + c) / 2;
+	double p = (a + b + c) / 2.0;
+	int res{};
+	long long j{};
 	p = p * (p - a) * (p - b) *(p - c);
-	int i = 0;
-	while (i * i < p) i++;
-	if (i * i == p) return i;
-	return -1;
+	for (long long i = 0; i * i < p; i++) {
+        j++;
+		if (j * j == p) res = j;
+		else res = -1;
+	}
+	return res;
 }
 
 double itc_scir(int radius) {
