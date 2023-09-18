@@ -14,19 +14,18 @@ double itc_scir(int radius) {
 	return -1;
 }
 double itc_pow(int num, int step) {
-    double numm = 0;
+	double a = num;
 	if (num == 0) return 0;
-	if (step == 1) return num;
-        if (step == 0) return 1;
-	if (step < 0) {
+	else if (step == 1) return num;
+	else if (step == 0) return 1;
+	else if (step < 0) {
 		for (int i = -1; i > step; i--) {
-            numm = num * num;
-            numm = 1.0 / numm;
+			a = a * num;
 		}
-		return numm;
+		return 1.0 / a;
 	}
 	else {
-		for (int j = 1; j < step; j++) num = num * num;
+		for (int j = 1; j < step; j++) a = a * num;
 	}
-	return num;
+	return a;
 }
